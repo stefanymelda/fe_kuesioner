@@ -1,18 +1,21 @@
+<!-- component -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html x-data="data()" lang="en">
+
+<head>
     <title>Kuesioner</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../shuffle-for-tailwind.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Favicon -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="../js/main.js"></script>
     <script type="module" src="../js/fetch.js"></script>
-  </head>
 
-  <body>
+</head>
+
+<body>
     <div class="flex h-screen bg-gray-800 " :class="{ 'overflow-hidden': isSideMenuOpen }">
 
         <!-- Desktop sidebar -->
@@ -680,4 +683,5 @@
         chart.render();
     </script>
 </body>
+
 </html>
