@@ -25,4 +25,4 @@ function pushData() {
   postData(urlPOST, data, AmbilResponse);
 }
 
-onClick("save", pushData);
+onClick("button", pushData);
