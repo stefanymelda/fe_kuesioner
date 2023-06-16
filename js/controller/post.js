@@ -20,8 +20,8 @@ function pushData() {
       usia: parseFloat(getValue("usia")),
       email: getValue("email"),
       phone_number: getValue("phone_number")
-    },
-  };
+    }
+  }
   postData(urlPOST, data, AmbilResponse);
 }
 
