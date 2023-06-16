@@ -4,6 +4,7 @@ import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
   // var biodata = getValue("biodata");
+  console.log(getValue("email"));
 
   let data = {
     longitude: parseFloat(getValue("longitude")),
@@ -14,7 +15,7 @@ function pushData() {
     biodata: {
       nama: getValue("nama"),
       jenis_kelamin: getValue("jenis_kelamin"),
-      usia: getValue("usia"),
+      usia: parseFloat(getValue("usia")),
       email: getValue("email"),
       phone_number: getValue("phone_number"),
     },
@@ -22,4 +23,4 @@ function pushData() {
   postData(urlPOST, data, AmbilResponse);
 }
 
-onClick("button1", pushData);
+onClick("save", pushData);
