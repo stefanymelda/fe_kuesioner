@@ -3,7 +3,7 @@ import { onClick, getValue } from "https://bukulapak.github.io/element/process.j
 import { urlPOST, AmbilResponse } from "../config/url_post.js";
 
 function pushData() {
-  var biodata = getValue("biodata");
+  // var biodata = getValue("biodata");
 
   let data = {
     longitude: parseFloat(getValue("longitude")),
@@ -22,4 +22,4 @@ function pushData() {
   postData(urlPOST, data, AmbilResponse);
 }
 
-onClick("button", pushData);
+onClick("button1", pushData);
