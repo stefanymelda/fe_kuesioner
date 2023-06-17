@@ -3,7 +3,7 @@ export function isiData(results) {
       { id: 'nama', path: 'biodata.nama' },
       { id: 'jenis_kelamin', path: 'biodata.jenis_kelamin' },
       { id: 'phone_number', path: 'biodata.phone_number' },
-      { id: 'email', path: 'email' },
+      { id: 'email', path: 'biodata.email' },
       { id: 'usia', path: 'biodata.usia' },
       { id: 'location', path: 'location' },
       { id: 'latitude', path: 'latitude' },
