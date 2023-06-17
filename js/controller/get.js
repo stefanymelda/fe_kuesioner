@@ -13,6 +13,8 @@ function isiRow(value) {
     .replace("#USIA#", value.biodata.usia)
     .replace("#STATUS#", value.status)
     .replace("#LOKASI#", value.location)
+    .replace("#IDEDIT#", value._id)
+    .replace("#IDHAPUS#", value._id)
     .replace("#WARNA#", getRandomColor())
     .replace(/#WARNALOGO#/g, getRandomColorName());
   addInner("iniTabel", content);
