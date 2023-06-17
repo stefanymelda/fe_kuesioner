@@ -23,4 +23,4 @@ let data = {
   putData(urlPUT, data, AmbilResponse);
 }
 
-onClick("save", pushData);
+onClick("button", pushData);
