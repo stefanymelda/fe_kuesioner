@@ -4,7 +4,7 @@ import { urlPUT, AmbilResponse } from "../config/url_put.js";
 
 function pushData() {
 //   var hari_kerja = getValue("hari_kerja");
-console.log(getValue("email"));
+// console.log(getValue("email"));
 
 let data = {
     longitude: parseFloat(getValue("longitude")),
