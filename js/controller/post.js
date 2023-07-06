@@ -4,7 +4,7 @@ import { urlPOST, AmbilResponse } from "../config/url_post.js";
 import { validasiInput } from "../loginadmin/valid.js";
 
 function pushData() {
-  // var biodata = getValue("biodata");
+
   if (!validasiInput()) {
     return;
   }

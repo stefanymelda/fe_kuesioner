@@ -12,21 +12,12 @@ export function validasiInput() {
   var email = getValue("email");
   var phone_number = getValue("phone_number");
   
-
-  if (
-    isNaN(longitude) ||
-    isNaN(latitude) ||
-    isNaN(location) ||
-    isNaN(email) ||
-    isNaN(status) ||
-    nama.trim() === "" ||
-    jenis_kelamin.trim() === "" ||
-    usia.trim() === "" ||
-    email.trim() === "" ||
-    phone_number.trim() === ""
-  ) {
-    alert("Eitss..Wajib Diisi!!");
-    return false;
+  // console.log((getValue("latitude")==""))
+  if (longitude != "" && latitude!="" && location !="" && email !="" && status !="" && nama !="" && jenis_kelamin !="" 
+  && usia !="" && email !="" && phone_number !="") {
+	return true;
+  }else{
+	alert('Data was empty, you must fill completely!!');
   }
-  return true;
+
 }
