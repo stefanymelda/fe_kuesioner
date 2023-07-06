@@ -32,5 +32,11 @@ function loginAdmin(event) {
         }
       })
       .catch((error) => console.log("Error:", error));
+      
   }
   document.getElementById("logadm").addEventListener("submit", loginAdmin);
+  document.onkeydown = function (e) {
+  if (e.key === "Enter") {
+    loginAdmin()
+  }
+};
