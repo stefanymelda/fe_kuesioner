@@ -7,11 +7,11 @@ function pushData() {
 // console.log(getValue("email"));
 
 let data = {
-    longitude: parseFloat(getValue("longitude")),
-    latitude: parseFloat(getValue("latitude")),
+    // longitude: parseFloat(getValue("longitude")),
+    // latitude: parseFloat(getValue("latitude")),
     location: getValue("location"),
     email: getValue("email"),
-    status: getValue("status"),
+    // status: getValue("status"),
     biodata: {
       nama: getValue("nama"),
       jenis_kelamin: getValue("jenis_kelamin"),
